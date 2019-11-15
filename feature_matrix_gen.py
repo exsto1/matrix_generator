@@ -1,4 +1,5 @@
 # from matplotlib import pyplot as plt
+import numpy as np
 min_gap_size = 2
 sekwencje = open('representative_alignment.fasta').readlines()
 sekwencje = [i for i in sekwencje if '>' not in i]
@@ -40,6 +41,10 @@ for i in range(len(sekwencje)):
     matrix.append(temp_list)
     temp_list = []
 
+matrix_numpy = np.array(matrix)
+# print(matrix_numpy)
+
+np.savetxt('test_matrix.csv', matrix_numpy, fmt='%1i', delimiter=',')
 
 # a = plt.imshow(matrix)
 # plt.savefig("new1")
