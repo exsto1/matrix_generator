@@ -1,7 +1,7 @@
 from matplotlib import pyplot as plt
 import numpy as np
 min_gap_size = 2
-sekwencje = open('representative_alignment.fasta').readlines()
+sekwencje = open('all_files/representative_alignment.fasta').readlines()
 sekwencje = [i for i in sekwencje if '>' not in i]
 
 # Wersja precyzyjna z uwzględnianiem pojedynczych gapów.

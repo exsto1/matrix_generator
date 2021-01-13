@@ -1,7 +1,7 @@
 from tqdm import tqdm
 from matplotlib import pyplot as plt
 import numpy as np
-sequences = open('representative_alignment.fasta').readlines()
+sequences = open('all_files/representative_alignment.fasta').readlines()
 sequences = [i for i in sequences if '>' not in i]
 
 """
